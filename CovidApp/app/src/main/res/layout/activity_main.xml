@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/c4"
+        android:layout_width="195dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+        android:text="Vomitting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c3" />
+
+    <CheckBox
+        android:id="@+id/c3"
+        android:layout_width="195dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+        android:text="Throat pain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c2" />
+
+    <CheckBox
+        android:id="@+id/c2"
+        android:layout_width="195dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+        android:text="Fever"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c1" />
+
+    <TextView
+        android:id="@+id/covid"
+        android:layout_width="258dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="139dp"
+        android:text="COVID-APP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/c1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <CheckBox
+        android:id="@+id/c1"
+        android:layout_width="195dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="454dp"
+        android:background="@color/white"
+        android:text="Cold and Cough"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covid"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="137dp"
+        android:layout_height="53dp"
+        android:text="Diagonise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c4" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter patient name"
+        android:inputType="text|textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#676363"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/c1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/covid"
+        app:layout_constraintVertical_bias="0.531" />
+</androidx.constraintlayout.widget.ConstraintLayout>
